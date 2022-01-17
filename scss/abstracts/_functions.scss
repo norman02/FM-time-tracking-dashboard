@@ -1,0 +1,8 @@
+// Functions 
+
+//  * Converts pixels to rem units
+//  * @param $pixel input in pixels
+//  * @return number of rems equal to the input pixels
+@function rem($pixel) {
+    @return ($pixel /16) * 1rem;
+}

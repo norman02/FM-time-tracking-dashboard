@@ -85,4 +85,54 @@ people that prefer not to see them */
     scroll-behavior: auto !important;
   }
 }
+
+/*---------------------\
+    Typography rules
+\---------------------*/
+body {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  /*set by rem() function */
+  font-size: 0.9375rem;
+}
+
+h1 {
+  /* set by rem() function */
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+.header__menu a {
+  color: #6f76c8;
+  text-decoration: none;
+}
+
+.light-text {
+  color: #bdc1ff;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+.lg-body {
+  /* set by rem() function */
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.xl-body {
+  /*set by rem() function */
+  font-size: 2rem;
+  line-height: 2.375rem;
+}
+
+/*---------------------\
+    Testing stuff
+\---------------------*/
+body {
+  background-color: gray;
+  padding: 10px;
+}
 /*# sourceMappingURL=main.css.map */

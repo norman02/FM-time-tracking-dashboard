@@ -1,0 +1,43 @@
+
+/*---------------------\
+    Typography rules
+\---------------------*/
+
+body {
+    color: $main-text-color;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    /*set by rem() function */
+    font-size: rem(15);
+  }
+  
+  h1 {
+    /* set by rem() function */
+    font-size: rem(24);
+    line-height: rem(28);
+  }
+  
+  .header__menu a {
+    color: $link-color;
+    text-decoration: none;
+  }
+  
+  .light-text {
+    color: $lt-txt-color;
+  }
+  
+  h1, h2 {
+      font-weight: 300;
+  }
+  
+  .lg-body {
+    /* set by rem() function */
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+  
+  .xl-body {
+    /*set by rem() function */
+    font-size: rem(32);
+    line-height: rem(38);
+  }

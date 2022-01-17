@@ -1,1 +1,15 @@
-@import 'base/reset';
+@import "abstracts/functions";
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+
+/*---------------------\
+    Testing stuff
+\---------------------*/
+body {
+  background-color: gray;
+  padding: 10px;
+}
+
+
