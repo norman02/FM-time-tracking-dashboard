@@ -6,3 +6,12 @@
 @function rem($pixel) {
     @return ($pixel /16) * 1rem;
 }
+
+// function converts a pixel measurment into
+// small screen (375px) proportion
+// @param $pixel input value
+// @return value in vw
+@function screen-sm($pixel) {
+    @return ($pixel / 375) * 100vw;
+  
+  }

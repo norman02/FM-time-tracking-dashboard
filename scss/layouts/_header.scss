@@ -1,0 +1,56 @@
+
+/*-----------------------------*\
+  #Layout - Header
+\*-----------------------------*/
+
+/*  The header displays the user information and contians
+ *  navigation menu. The header needs to have two 
+ *  states based on display size. On a mobile device the
+ *  header is located at the top of the page. On larger 
+ *  screens the header is aligned left spanning two grid rows
+ */
+/* background color matches the card elements background */
+header {
+    background-color: $card-bg-clr;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  /* header profile is the top portion of the header element
+   * containing user info and avatar
+   *  1. padding set with rem function
+   */
+  .header__profile {
+    background-color: $profile-bg-clr;
+    border-radius: 15px;
+    padding: rem(35) rem(41) rem(34) rem(32); /* [1] */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* user avatar is a profile picture with a border 
+    *   1. set dimensions with rem() function
+    */
+  .header__profile__avatar {
+    height: rem(64); /* [1] */
+    margin-right: rem(20); /* [1] */
+  }
+  
+  /* The header menu contains the navigation links for the 
+   * app. 
+   *  1. set with rem() function
+   */
+  .header__menu {
+  
+    
+    padding: rem(24) 0; /* [1] */ 
+  
+    ul {
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+    }
+    
+    li {
+      display: inline;
+    }
+  }

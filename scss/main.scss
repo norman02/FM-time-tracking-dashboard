@@ -4,12 +4,14 @@
 @import "base/reset";
 @import "base/typography";
 
-/*---------------------\
-    Testing stuff
-\---------------------*/
-body {
-  background-color: gray;
-  padding: 10px;
-}
+@import "layouts/global";
+@import "layouts/header";
 
+/*-----------------------------*\
+  #Testing
+\*-----------------------------*/
+
+header {
+  display: none;
+}
 
