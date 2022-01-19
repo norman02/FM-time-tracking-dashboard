@@ -248,6 +248,21 @@ header {
 }
 
 /*-----------------------------*\
+  #Page - Weekly display
+\*-----------------------------*/
+/* The weekly display has two grid layouts.
+ * on small screens the grid is a single column, 
+ * on large screens the number of columns increases
+ * to fit screen size
+ *   1. set by the rem() function
+ */
+.page--weekly-display {
+  display: grid;
+  row-gap: 1.5rem;
+  /* [1] */
+}
+
+/*-----------------------------*\
   #Testing
 \*-----------------------------*/
 /*# sourceMappingURL=main.css.map */
