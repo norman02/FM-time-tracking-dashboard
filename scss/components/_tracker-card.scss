@@ -1,0 +1,47 @@
+
+/*-----------------------------*\
+  #Component - tracker card
+\*-----------------------------*/
+/* tracker card background provides a background 
+ * element. The data card appears to lay on top
+ * of this background card.
+ *  1. slightly hacky method to positon background
+ *     behind the data card.
+ */ 
+ .tracker__card--bg {
+    background-color: $card-1-bg-color;
+    
+    height: 79px; /* [1] */
+    margin-bottom: -41px; /* [1] */
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+ 
+    img { 
+      margin-top: -12px;
+      margin-right: 18px;
+    }
+ 
+  }
+ /* Tracker card data contains activity data from
+  * the data source.
+  *  1. set with the rem() function
+  */ 
+ .tracker__card--data {
+   align-items: baseline;
+   background-color: $card-bg-clr;
+   border-radius: 15px;
+   column-gap: rem(72); /* [1] */
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: rem(25) rem(24) rem(40) rem(24); /* [1] */
+   position: relative;
+   z-index: 5;
+ 
+   a, .justify-end {
+     justify-self: end;
+   }
+ }
