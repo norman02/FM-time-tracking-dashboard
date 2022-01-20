@@ -3,27 +3,30 @@ const tracker = document.getElementById("js-tracker");
 /**
  * create a tracker card
  * @param image (string) URL of the background image
+ * @param color (string) color of the background
  * @param name (string) the name of the activity
  * @param hours (number)number of hours completed this session
  * @param lastHours (number) of hours completed last session
  */
-const createTrackerCard = (image = "", name = 'Activity', hours = 0, lastHours = 0) => {
+const createTrackerCard = (image = "", color="", name = 'Activity', hours = 0, lastHours = 0) => {
   /** create tracker card */
   const trackerCard = document.createElement("section");
   trackerCard.classList.add("tracker__card");
   tracker.appendChild(trackerCard);
   /** create background element 
    * @param imageUrl (string) URL for the background image
+   * @param backgroundColor (string) background color
   */
-  const createTrackerCardBackground = (imageUrl) => {
+  const createTrackerCardBackground = (imageUrl, backgroundColor) => {
     const trackerCardBackground = document.createElement("div");
     trackerCardBackground.classList.add("tracker__card--bg");
+    trackerCardBackground.style.backgroundColor = backgroundColor
     trackerCard.appendChild(trackerCardBackground);
     const backgroundImage = document.createElement("img");
     backgroundImage.src = imageUrl;
     trackerCardBackground.appendChild(backgroundImage);
   }
-  createTrackerCardBackground(image)
+  createTrackerCardBackground(image, color)
   
   /** create data element */
   const trackerCardData = document.createElement("div");
@@ -61,4 +64,10 @@ const createTrackerCard = (image = "", name = 'Activity', hours = 0, lastHours =
 
   addDataCardContent(name, hours, lastHours);
 };
-createTrackerCard("./images/icon-work.svg", 'work', 30, 40);
+createTrackerCard("./images/icon-work.svg", "#FF8B64", 'Work', 32, 36);
+createTrackerCard("./images/icon-play.svg", "#55C2E6", 'Play', 10, 8);
+createTrackerCard("./images/icon-study.svg", "#FF5E7D", 'Study', 4, 7);
+createTrackerCard("./images/icon-exercise.svg", "#4BCF82", 'Exercise', 4, 5);
+createTrackerCard("./images/icon-social.svg", "#7335D2",'Social', 5, 10);
+createTrackerCard("./images/icon-self-care.svg", "#F1C75B", 'Self Care', 2, 2);
+
