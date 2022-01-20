@@ -43,5 +43,7 @@ const createTrackerCard = () => {
     trackerCardData.appendChild(prevHours)
   
 }
-
+createTrackerCard()
+createTrackerCard()
+createTrackerCard()
 createTrackerCard()
