@@ -8,9 +8,8 @@
  *  1. slightly hacky method to positon background
  *     behind the data card.
  */ 
- .tracker__card--bg {
-    background-color: $card-1-bg-color;
-    
+ .tracker__card__bg {
+
     height: 79px; /* [1] */
     margin-bottom: -41px; /* [1] */
     border-radius: 15px;
@@ -24,7 +23,25 @@
       margin-top: -12px;
       margin-right: 18px;
     }
- 
+
+    &--work {
+      background-color: $work-bg-color;
+    }
+    &--play {
+      background-color: $play-bg-color;
+    }
+    &--study {
+      background-color: $study-bg-color;
+    }
+    &--exercise {
+      background-color: $exercise-bg-color;
+    }
+    &--social{
+      background-color: $social-bg-color;
+    }
+    &--self-care {
+      background-color: $self-care-bg-color;
+    }
   }
  /* Tracker card data contains activity data from
   * the data source.

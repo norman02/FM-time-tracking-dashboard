@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FM-Time-Tracking Dashboard</title>
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,128 @@
       </nav>
     </header>
 
-    <main class="tracker" id="js-tracker">
+    <main class="tracker">
+      <section class="tracker__card tracker__card--work">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--work">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Work</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">32</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">36</span>hrs
+        </p>
+      </div>
+      </section>
+      <section class="tracker__card tracker__card--play">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--play">
+          <img src="./images/icon-play.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Play</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">10</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">8</span>hrs
+        </p>
+      </div>
+      </section>
+      <section class="tracker__card tracker__card--study">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--study">
+          <img src="./images/icon-study.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Study</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">4</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">7</span>hrs
+        </p>
+      </div>
+      </section>
+      <section class="tracker__card tracker__card--exercise">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--exercise">
+          <img src="./images/icon-exercise.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Exercise</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">4</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">5</span>hrs
+        </p>
+      </div>
+      </section>
+      <section class="tracker__card tracker__card--social">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--social">
+          <img src="./images/icon-social.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Social</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">5</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">10</span>hrs
+        </p>
+      </div>
+      </section>
+      <section class="tracker__card tracker__card--self-care">
+        <!-- div provides a background element  -->
+        <div class="tracker__card__bg tracker__card__bg--self-care">
+          <img src="./images/icon-self-care.svg" alt="">
+        </div>
+        <!-- data container  -->
+        <div class="tracker__card--data">
+        <h2>Self Care</h2>
+        <a href="#"><img src="./images/icon-ellipsis.svg" alt="expand" /></a>
+        <p class="xl-body">
+          <!-- span for javascript data  -->
+          <span id="current-hours">2</span>hrs
+        </p>
+        <p class="light-text justify-end">
+          Last Week -
+          <!-- span for javascript data  -->
+          <span id="prev-hours">2</span>hrs
+        </p>
+      </div>
+      </section>
+
     </main>
   </body>
   
