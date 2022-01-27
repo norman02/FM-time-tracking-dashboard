@@ -14,6 +14,8 @@ header {
     background-color: $card-bg-clr;
     border-radius: 15px;
     overflow: hidden;
+    margin: auto;
+    max-width: 600px;
   }
   /* header profile is the top portion of the header element
    * containing user info and avatar

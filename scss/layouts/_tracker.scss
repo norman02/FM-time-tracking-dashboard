@@ -1,5 +1,7 @@
 .tracker {
     display: grid;
-    margin-top: rem(24);
     row-gap: rem(24);
+    margin: auto;
+    margin-top: rem(24);
+    max-width: 600px;
   }

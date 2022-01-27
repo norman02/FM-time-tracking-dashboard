@@ -224,6 +224,8 @@ header {
   background-color: #1c1f4a;
   border-radius: 15px;
   overflow: hidden;
+  margin: auto;
+  max-width: 600px;
 }
 
 /* header profile is the top portion of the header element
@@ -270,8 +272,10 @@ header {
 
 .tracker {
   display: grid;
-  margin-top: 1.5rem;
   row-gap: 1.5rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  max-width: 600px;
 }
 
 /*-----------------------------*\
