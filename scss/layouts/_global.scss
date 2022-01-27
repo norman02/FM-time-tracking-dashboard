@@ -4,8 +4,20 @@
 /* The body has a main background color and elements are 
  * centered withen the body. 
  * 1. set padding based on 375px screen width screen-sm()*/
- body {
-    background-color: $main-bg-clr;
-    padding: screen-sm(81) screen-sm(24); /* [1] */
+.page {
+  background-color: $main-bg-clr;
+  padding: screen-sm(81) screen-sm(24); /* [1] */
+
+  @include media-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      column-gap: rem(30);
+      margin: auto;
+    }
   }
-  
+}

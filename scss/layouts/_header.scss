@@ -16,6 +16,10 @@ header {
     overflow: hidden;
     margin: auto;
     max-width: 600px;
+
+    @include media-lg {
+      margin: 0;
+    }
   }
   /* header profile is the top portion of the header element
    * containing user info and avatar

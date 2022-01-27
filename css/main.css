@@ -204,10 +204,24 @@ h1, h2 {
 /* The body has a main background color and elements are 
  * centered withen the body. 
  * 1. set padding based on 375px screen width screen-sm()*/
-body {
+.page {
   background-color: #0f1424;
   padding: 21.6vw 6.4vw;
   /* [1] */
+}
+
+@media screen and (min-width: 1000px) {
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1.875rem;
+    margin: auto;
+  }
 }
 
 /*-----------------------------*\
@@ -226,6 +240,12 @@ header {
   overflow: hidden;
   margin: auto;
   max-width: 600px;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    margin: 0;
+  }
 }
 
 /* header profile is the top portion of the header element
@@ -276,6 +296,16 @@ header {
   margin: auto;
   margin-top: 1.5rem;
   max-width: 600px;
+}
+
+@media screen and (min-width: 1000px) {
+  .tracker {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 17.70833vw);
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
 }
 
 /*-----------------------------*\
